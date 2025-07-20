@@ -26,6 +26,95 @@ body {
     src: url(./KFOmCnqEu92Fr1Mu4mxK\ \(1\).ttf);
 }
 
+/* Responsive adjustments for screens 768px ya usse chhoti */
+@media (max-width: 768px) {
+  /* Navbar */
+  #page1 > nav {
+    flex-wrap: wrap;
+    padding: 10px 15px;
+    height: auto;
+  }
+  #page1 > nav > img {
+    width: 40%;
+    margin-bottom: 10px;
+  }
+  #rightnav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+  #rightnav > button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 12px 0;
+    font-size: 16px;
+  }
+  #rightnav > button.demo-btn a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Bottom text on page1 */
+  .bottompage1 {
+    width: 80vw;
+    left: 10vw;
+    height: auto;
+    bottom: 8%;
+  }
+  .bottompage1 > h1 {
+    font-size: 7vw;
+    line-height: 1.1;
+  }
+  .bottompageinner {
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: flex-start;
+    height: auto;
+  }
+  .bottompageinner > h4 {
+    font-size: 3.5vw;
+  }
+  .bottompageinner > button {
+    width: 100%;
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+
+  /* Stack columns vertically */
+  #page9, #page10, #page11 .page11-inner {
+    flex-direction: column;
+  }
+  .left9, .right9,
+  .left11, .right11,
+  .right10 {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Videos and images responsive */
+  #page1 > video,
+  #page8 > video {
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Buttons bigger */
+  button, .demo-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+  }
+
+  /* General padding for readability */
+  #page2, #page4, #page6, #page10, #page12, #page13 {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+
+
 #page1{
      height: 100vh;
     width: 100vw;
