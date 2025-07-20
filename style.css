@@ -26,66 +26,106 @@ body {
     src: url(./KFOmCnqEu92Fr1Mu4mxK\ \(1\).ttf);
 }
 
-/* Responsive adjustments for screens 768px ya usse chhoti */
+/* ADD TO BOTTOM OF YOUR EXISTING CSS */
+
 @media (max-width: 768px) {
   /* Navbar */
   #page1 > nav {
     flex-wrap: wrap;
-    padding: 10px 15px;
+    padding: 10px 20px;
     height: auto;
+    flex-direction: column;
+    gap: 10px;
   }
+
   #page1 > nav > img {
-    width: 40%;
-    margin-bottom: 10px;
+    width: 50%;
+    margin: 0 auto;
   }
+
   #rightnav {
-    width: 100%;
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 10px;
-  }
-  #rightnav > button {
-    flex: 1;
-    margin: 0 5px;
-    padding: 12px 0;
-    font-size: 16px;
-  }
-  #rightnav > button.demo-btn a {
-    display: block;
     width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  #rightnav > button {
+    flex: 1 1 40%;
+    padding: 12px;
+    font-size: 16px;
     text-align: center;
   }
 
-  /* Bottom text on page1 */
+  /* Bottom page1 adjustments */
   .bottompage1 {
-    width: 80vw;
-    left: 10vw;
+    width: 90vw;
+    left: 5vw;
     height: auto;
-    bottom: 8%;
-  }
-  .bottompage1 > h1 {
-    font-size: 7vw;
-    line-height: 1.1;
-  }
-  .bottompageinner {
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: flex-start;
-    height: auto;
-  }
-  .bottompageinner > h4 {
-    font-size: 3.5vw;
-  }
-  .bottompageinner > button {
-    width: 100%;
-    padding: 12px 30px;
-    font-size: 16px;
+    bottom: 5%;
   }
 
-  /* Stack columns vertically */
-  #page9, #page10, #page11 .page11-inner {
+  .bottompage1 > h1 {
+    font-size: 8vw;
+    line-height: 1.1;
+  }
+
+  .bottompageinner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .bottompageinner > h4 {
+    font-size: 4vw;
+  }
+
+  .bottompageinner > button {
+    font-size: 16px;
+    width: 100%;
+    padding: 12px 20px;
+  }
+
+  /* Page2 and Page4 */
+  #page2, #page4, #page6, #page10, #page12, #page13 {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  #page2 > h1,
+  #page4 > h1,
+  #page6 > h1,
+  .page12-inner > h1,
+  #page13 > h1 {
+    font-size: 6vw;
+    width: 100%;
+  }
+
+  #page2 > h2,
+  #page4 > h3,
+  #page6 > h3,
+  .page12-inner > p {
+    font-size: 4vw;
+  }
+
+  /* Page8 button and text */
+  .page8-bottom > h1 {
+    font-size: 6vw;
+  }
+
+  .page8-bottom > button {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+
+  /* Page9, 10, 11 column stacking */
+  #page9, #page10, .page11-inner {
     flex-direction: column;
   }
+
   .left9, .right9,
   .left11, .right11,
   .right10 {
@@ -93,26 +133,60 @@ body {
     height: auto;
   }
 
-  /* Videos and images responsive */
-  #page1 > video,
-  #page8 > video {
-    object-fit: contain;
-    max-width: 100%;
-    height: auto;
+  .right10 {
+    left: 0;
   }
 
-  /* Buttons bigger */
-  button, .demo-btn {
-    padding: 15px 30px;
-    font-size: 18px;
+  .right10-inner > h1 {
+    font-size: 5vw;
   }
 
-  /* General padding for readability */
-  #page2, #page4, #page6, #page10, #page12, #page13 {
-    padding-left: 5vw;
-    padding-right: 5vw;
+  .right10-inner > p {
+    font-size: 4vw;
+    width: 90%;
+  }
+
+  /* Page11 */
+  #page11 > h1 {
+    font-size: 6vw;
+  }
+
+  .right11 > h1 {
+    font-size: 5vw;
+  }
+
+  .right11 > h4 {
+    font-size: 3.5vw;
+  }
+
+  /* Page12 */
+  .page12-inner {
+    top: 10%;
+    right: 5%;
+  }
+
+  .page12-inner > p {
+    font-size: 4vw;
+  }
+
+  /* Page13 */
+  #page13 > button {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+
+  /* Page14 */
+  .page14-inner > h1,
+  .page14-inner > i {
+    font-size: 5vw;
+  }
+
+  .page14-inner {
+    padding: 10px 5vw;
   }
 }
+
+/* END OF MOBILE RESPONSIVE */
 
 
 #page1{
